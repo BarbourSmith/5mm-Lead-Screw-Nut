@@ -83,8 +83,41 @@
                     "ioValue": 10
                 },
                 {
-                    "name": "3D shape 4",
+                    "name": "3D shape 5",
                     "ioValue": 10
+                },
+                {
+                    "name": "3D shape 6",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 7",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.5911282545805208,
+            "y": 0.5916030534351144,
+            "uniqueID": 634385,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/174441/225510Translate"
+                },
+                {
+                    "name": "x-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 120
                 }
             ]
         },
@@ -144,20 +177,27 @@
             ]
         },
         {
-            "atomType": "GitHubMolecule",
-            "name": "Rotational Pattern",
-            "x": 0.6634522661523626,
-            "y": 0.7977099236641221,
-            "uniqueID": 395862,
-            "projectID": "209940609",
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.6576663452266153,
+            "y": 0.6603053435114504,
+            "uniqueID": 316533,
             "ioValues": [
                 {
-                    "name": "Angle",
-                    "ioValue": 120
+                    "name": "geometry",
+                    "ioValue": "atoms/174441/225510Translate"
                 },
                 {
-                    "name": "Number",
-                    "ioValue": 2
+                    "name": "x-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": -120
                 }
             ]
         },
@@ -213,10 +253,31 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape",
+            "ap2Name": "3D shape 6",
+            "ap2Primary": false,
+            "ap1ID": 634385,
+            "ap2ID": 901852
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 5",
             "ap2Primary": false,
             "ap1ID": 225510,
-            "ap2ID": 395862
+            "ap2ID": 901852
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 225510,
+            "ap2ID": 634385
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 225510,
+            "ap2ID": 316533
         },
         {
             "ap1Name": "geometry",
@@ -233,10 +294,10 @@
             "ap2ID": 291699
         },
         {
-            "ap1Name": "Geometry",
-            "ap2Name": "3D shape 4",
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 7",
             "ap2Primary": false,
-            "ap1ID": 395862,
+            "ap1ID": 316533,
             "ap2ID": 901852
         }
     ],
