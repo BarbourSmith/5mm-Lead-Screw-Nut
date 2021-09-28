@@ -55,6 +55,23 @@
             ]
         },
         {
+            "atomType": "Union",
+            "name": "Union",
+            "x": 0.6083455344070279,
+            "y": 0.25572519083969464,
+            "uniqueID": 901852,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
             "atomType": "Circle",
             "name": "Circle",
             "x": 0.1562198649951784,
@@ -68,39 +85,10 @@
             ]
         },
         {
-            "atomType": "Union",
-            "name": "Union",
-            "x": 0.6171648987463838,
-            "y": 0.29770992366412213,
-            "uniqueID": 901852,
-            "ioValues": [
-                {
-                    "name": "3D shape 1",
-                    "ioValue": 10
-                },
-                {
-                    "name": "3D shape 2",
-                    "ioValue": 10
-                },
-                {
-                    "name": "3D shape 5",
-                    "ioValue": 10
-                },
-                {
-                    "name": "3D shape 6",
-                    "ioValue": 10
-                },
-                {
-                    "name": "3D shape 7",
-                    "ioValue": 10
-                }
-            ]
-        },
-        {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.5911282545805208,
-            "y": 0.5916030534351144,
+            "x": 0.5431918008784773,
+            "y": 0.4961832061068702,
             "uniqueID": 634385,
             "ioValues": [
                 {
@@ -118,6 +106,65 @@
                 {
                     "name": "z-axis degrees",
                     "ioValue": 120
+                }
+            ]
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.6918008784773061,
+            "y": 0.33587786259541985,
+            "uniqueID": 866050,
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": "atoms/174441/509203Group"
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": "atoms/174441/901852Union"
+                }
+            ]
+        },
+        {
+            "atomType": "Add-BOM-Tag",
+            "name": "Add BOM Tag",
+            "x": 0.7811127379209369,
+            "y": 0.21755725190839695,
+            "uniqueID": 536154,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/174441/866050Difference"
+                }
+            ],
+            "BOMitem": {
+                "BOMitemName": "5mm Leadscrew Nut",
+                "numberNeeded": 1,
+                "costUSD": 0.3,
+                "source": "www.example.com",
+                "totalNeeded": 1,
+                "radius": 0.015384615384615385
+            }
+        },
+        {
+            "atomType": "Group",
+            "name": "Group",
+            "x": 0.6456808199121523,
+            "y": 0.5763358778625954,
+            "uniqueID": 509203,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 3",
+                    "ioValue": 10
                 }
             ]
         },
@@ -177,10 +224,24 @@
             ]
         },
         {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.8653001464128843,
+            "y": 0.46183206106870234,
+            "uniqueID": 196837,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/174441/536154Add-BOM-Tag"
+                }
+            ],
+            "selectedColorIndex": "19"
+        },
+        {
             "atomType": "Rotate",
             "name": "Rotate",
-            "x": 0.6576663452266153,
-            "y": 0.6603053435114504,
+            "x": 0.6193265007320644,
+            "y": 0.8091603053435115,
             "uniqueID": 316533,
             "ioValues": [
                 {
@@ -210,7 +271,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "atoms/174441/901852Union"
+                    "ioValue": "atoms/174441/196837Color"
                 }
             ]
         }
@@ -239,6 +300,13 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 901852,
+            "ap2ID": 866050
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": 323368,
@@ -246,24 +314,31 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": 901852,
-            "ap2ID": 263791
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "3D shape 6",
+            "ap2Name": "3D shape 2",
             "ap2Primary": false,
             "ap1ID": 634385,
-            "ap2ID": 901852
+            "ap2ID": 509203
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "3D shape 5",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 866050,
+            "ap2ID": 536154
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 536154,
+            "ap2ID": 196837
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
             "ap2Primary": false,
-            "ap1ID": 225510,
-            "ap2ID": 901852
+            "ap1ID": 509203,
+            "ap2ID": 866050
         },
         {
             "ap1Name": "geometry",
@@ -281,6 +356,13 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "3D shape 3",
+            "ap2Primary": false,
+            "ap1ID": 225510,
+            "ap2ID": 509203
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap2Primary": true,
             "ap1ID": 291699,
@@ -295,13 +377,21 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "3D shape 7",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 196837,
+            "ap2ID": 263791
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 1",
             "ap2Primary": false,
             "ap1ID": 316533,
-            "ap2ID": 901852
+            "ap2ID": 509203
         }
     ],
     "fileTypeVersion": 1,
+    "simplify": false,
     "filetypeVersion": 1,
-    "circleSegmentSize": "1"
+    "circleSegmentSize": "0.051"
 }
